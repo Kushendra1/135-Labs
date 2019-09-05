@@ -1,0 +1,44 @@
+* Please fill out this section:
+** Name: Kushendra Ramrup
+** GitHub username: Kushendra1
+
+* Lab 06
+
+* File structure:
+- README.org - this file. fill out the top and use it for notes
+- Makefile
+- main.cpp - main driver
+- funcs.h / funcs.cpp -- add your functions here.
+- test.cpp - add your tests
+- doctest.h - testing library
+
+The full text of the 136 version of the lab can be found here:
+https://maryash.github.io/135/labs/lab_06.html
+
+
+* Overall notes:
+- Write your functions in funcs.cpp
+- Write your tests in test.cpp
+- I will test your program by running ~make test~ then ~./test~
+- Don't add .o, executable or any extraneous files to the repo
+- You should commit and push your work frequently
+- make sure to add sufficient tests to show that everything works
+ 
+* Specifc changes to the lab
+** Task A
+
+- Do not write a separate program. Write a function ~void
+  test_ascii(std::string line)~ which accepts a line of text as a
+  string and prints out (does not return) the output as specified in
+  the main lab.
+- Run this via a test case the same way you ran the shapes test cases.
+
+* Tasks B through D
+- Do not write separate programs just add the functions to your one
+  program.
+- Make sure to add appropriate tests (one per function) with
+  enough cases to show everything works.
+
+* Main lab
+
+Link: https://maryash.github.io/135/labs/lab_06.html
