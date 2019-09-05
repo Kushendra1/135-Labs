@@ -1,0 +1,60 @@
+* Please fill out this section:
+** Name: Kushendra Ramrup 
+** GitHub username: Kushendra1
+
+* Lab 09
+
+* File structure:
+- README.org - this file. fill out the top and use it for notes
+- Makefile
+- main.cpp - main driver
+- funcs.h / funcs.cpp -- add your functions here.
+- test.cpp - add your tests
+- doctest.h - testing library
+
+The full text of the 136 version of the lab can be found here:
+https://maryash.github.io/135/labs/lab_09.html
+
+
+* Overall notes:
+- Write your functions in funcs.cpp
+- Write your tests in test.cpp
+- I will test your program by running ~make test~ then ~./test~
+- Don't add .o, executable or any extraneous files to the repo
+- You should commit and push your work frequently
+- make sure to add sufficient tests to show that everything works
+ 
+* Specifc changes to the lab
+** Tasks A,B, and C
+- Create a file named *Coord3D.h* that contains the class definition:
+  #+BEGIN_SRC c++
+    class Coord3D {
+    public:
+        double x;
+        double y;
+        double z;
+    };
+  #+END_SRC
+- Include it in any files that declare an instance of the
+  class. Probably ~main.cpp~, ~funcs.cpp~ and ~test.cpp~. 
+- Add ~Coord3D.h~ as a dependency to the appropriate lines of ~Makefile~.
+- You will then be able to declare instances of this class, use, and
+  access them.
+- Create doctest tests to show that these three tasks are completed
+  correctly.
+- Remember that when the tests are run there should be no user input.
+** Task D
+- Do this task as specified in the main lab using a file named
+  poem.cpp. 
+- ~poem.cpp~ is already in the repo.
+** Task E
+- this task should be tested in doctests along with tasks A - C.
+** Task F (optional)
+- Add a new *.h* file for the class similar to the way you added
+  Coord3D.h
+- Show this task is completed (if you do it) using doctest tests.
+
+
+
+* Main lab
+Link: https://maryash.github.io/135/labs/lab_09.html
