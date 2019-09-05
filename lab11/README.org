@@ -1,0 +1,55 @@
+* Please fill out this section:
+** Name: Kushendra Ramrup
+** GitHub username: Kushendra1
+
+* Lab 11
+
+* File structure:
+- README.org - this file. fill out the top and use it for notes
+- Makefile
+- main.cpp - main driver
+- funcs.h / funcs.cpp -- add your functions here.
+- test.cpp - add your tests
+- doctest.h - testing library
+
+The full text of the 136 version of the lab can be found here:
+https://maryash.github.io/135/labs/lab_11.html
+
+
+* Overall notes:
+- Write your functions in funcs.cpp
+- Write your tests in test.cpp
+- I will test your program by running ~make test~ then ~./test~
+- Don't add .o, executable or any extraneous files to the repo
+- You should commit and push your work frequently
+- make sure to add sufficient tests to show that everything works
+
+* Specifc changes to the lab
+** Task A
+
+Write your Profile class in a files named Profile.h and Profile.cpp.
+
+Make sure Profile.h uses *#pragma once* and it is included in both
+Profile.cpp and other files that use the class (main.cpp, test.cpp).
+
+Remember to modify the Makefile as appropriate.
+
+You do not have to test the Profile class as specified in the main
+lab, rather write appropriate doctest tests in test.h
+
+
+** Task B and C
+
+Create the Network class in Network.cpp and Network.h and modify the
+other files as needed.
+
+The doctest tests should show the final funcitonality.
+
+** Task D
+If you do task D, add the struct definition to Network.h and tests as
+appropriate.
+
+
+* Main lab
+
+Link: https://maryash.github.io/135/labs/lab_11.html
