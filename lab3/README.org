@@ -1,0 +1,70 @@
+* Please fill out this section:
+** Name: Kushendra Ramrup 
+** GitHub username: Kushendar1
+
+* Lab 03
+
+* File structure:
+- README.org - this file. fill out the top and use it for notes
+- Makefile
+- main.cpp - main driver
+- funcs.h / funcs.cpp -- add your functions here.
+- test.cpp - add your tests
+- doctest.h - testing library
+- Data files (tsv as specified in the lab and csv if it's more convenient)
+  - Current_Reservoir_Levels.tsv
+  - Current_Reservoir_Levels.csv
+
+
+The bulk of the assignment can be found here:
+
+* Overall notes:
+** Output
+Your program should only perform output in main *unless explicitly specified in this document*
+** Input
+- Since you have not officially covered how to deal with reading in
+  the entire data set and then passing it to each function you should
+  write each function so that it opens the file, reads the data and
+  performs that task.
+ 
+
+* Task A
+- Write a function ~double east_storage(std::string date);~ that will return
+  thequantity in the *East basin Storage* for that day
+
+* Task B
+- Write a function ~double min_storage();~ which will return the
+  minimum storage in the East basin during 2018.
+- Write a function ~double max_storage();~ which will return the 
+  maximumstorage in the East basin during 2018.
+* Task C
+- Write a function ~std::string compare_basins(std::string date1, std::string
+  date2);~ that returns a string representing the the output as
+  specified in the lab description. Remember you can build the string
+  by doing something like this:
+#+BEGIN_SRC c++
+
+  std::string result="";
+  std::string nextline;
+  for (){
+    nextline = SOMETHING  ;'// figure out what to add to the output
+      result = result + nextline + "\n";
+   }
+  return result;
+#+END_SRC
+
+and then you can compare it in a test case by embedding the ~\n~ for
+the newlines: ~result.compare("09/13/2018 East\n09/13/2018 Est\n")
+etc.~
+
+* Task D
+*Do not do a normal test for this task*. For this task, just put the
+ code that will call this function and this particular function should
+ perform output (std::cout) as specified in the main lab:
+
+#+BEGIN_SRC c++ 
+TEST_CASE("Task D"){
+  // the code for calling D goes here but without CHECK or any other doctest specifics.
+}
+
+#+END_SRC 
