@@ -1,0 +1,32 @@
+* Please fill out this section:
+
+** Name:Kushendra Ramrup 
+** GitHub username:Kushendra1 
+
+
+* Lab 01
+
+** Do not edit these files:
+- .travis.yml
+- Makefile
+
+** Instructions
+Follow the instructions from the 135 lab page:
+https://maryash.github.io/135/labs/lab_01.html. For each task (A
+through D) write a program named and as specified in the lab. Add each
+cpp file to GitHub and make sure to commit and push before the end of
+the lab. *Do not* add other files to the repo.
+
+For full credit, write each part so that there is, in addition to the
+~main~ function, a single function that performs the actual task. The
+function should take parameters as needed. For example ~smaller~
+should accept two integers and return an integer: ~int smaller(int a,
+int b)~ etc.
+
+
+
+
+Please add the header block as specified in the lab so we can test
+Gradescope.
+
+
