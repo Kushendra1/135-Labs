@@ -1,0 +1,63 @@
+* Please fill out this section:
+** Name: Kushendra Ramrup 
+** GitHub username: Kushendra1
+
+* Lab 04
+
+* File structure:
+- README.org - this file. fill out the top and use it for notes
+- Makefile
+- main.cpp - main driver
+- funcs.h / funcs.cpp -- add your functions here.
+- test.cpp - add your tests
+- doctest.h - testing library
+
+The bulk of the assignment can be found here:
+- https://maryash.github.io/135/labs/lab_04.html
+
+* Overall notes:
+** INPUT and Output
+For each task, you should write a function that accepts parameters and
+performs *no keyboard input*. They should return a *std::string* with
+the result. 
+
+For example, *Task A* generates a rectangle so you should write a
+routine using a signature like this: ~std::string rect(int width, int
+height);~ and it should return a ~std::string~ with the
+rectangle. Remember to use *\n* to represent newlines
+
+** funcs.cpp / funcs.h
+
+Add all your functions to these files.
+
+** Main 
+
+You actually don't have to put anything here.
+
+** Test
+
+You do not have to explicitly test each task using *CHECK* or
+*REQUIRE* but you do have to put in calls in each test case to call
+and print out the results for each task. For example, you might have
+this for task A:
+
+#+BEGIN_SRC c++
+TEST_CASE("Task A"){
+     std::string result = rect(5,3);
+
+     std::cout << "----------- TASK A - rect ----------\n";
+     std::string result = rect(5,3);
+     std::cout << " rect(5,3):\n"
+     std::cout << result
+     std::cout << " rect(3,5):\n"
+     result = rect(3,5);
+     std::cout << result
+     std::cout << "\n\n";x
+}
+
+#+END_SRC
+
+* All Tasks
+
+All task specifics are explained in the main 135/136 lab:
+- https://maryash.github.io/135/labs/lab_04.html
